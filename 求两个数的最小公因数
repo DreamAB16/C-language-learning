@@ -1,0 +1,19 @@
+int m =0;
+int n =0;
+int max =0;
+scanf("%d%d",&m,&n);
+if(m>n)
+ max=m;
+else
+ max=n;
+while(1)
+{
+  if(max%m==0&&max%n==0)
+ {
+  printf("最小公因数就是%d\n",max);
+  break;
+ }
+  max++;
+}
+
+return 0 ;
