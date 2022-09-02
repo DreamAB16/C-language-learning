@@ -1,0 +1,18 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include<stdio.h>
+int main()
+{
+	char arr1[] = "welcome to school !!!!!!";
+	char arr2[] = "########################";
+	int left = 0;
+	int right = strlen(arr1) - 1; //定义右下标（数组长度-1）
+	while (left <= right)
+	{
+		arr2[left] = arr1[left]; //将数组1左边的字符赋给数组2左边
+		arr2[right] = arr1[right];//将数组1右边的字符赋给数组2右边
+		printf("%s\n", arr2); 
+		left++;
+		right--;
+	}
+	return 0;
+}
