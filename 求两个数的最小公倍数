@@ -1,0 +1,29 @@
+int m = 0;
+int n = 0;
+scanf("%d%d",&m,&n);
+int min = 0;
+if(m>n)
+  min=n;
+else
+  min=m;     //假设最大公约数就是m和n的较小值
+while(1)
+{
+    if(m % min == 0 && n % min == 0)
+    {
+        printf("最大公约数就是：%d\n",max);
+        break;    
+    }
+    max--;
+}
+return 0 ;
+或者
+int m = 0;
+int n = 0;
+scanf("%d%d",&m,&n);
+while(t=m%n)
+{
+    m = n;
+    n = t;
+}
+printf("最大公约数就是%d\n",n);
+return 0 ;
